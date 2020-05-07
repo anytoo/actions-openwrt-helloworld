@@ -9,7 +9,11 @@
 #=============================================================
 
 # fw876/helloworld
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Lienol/openwrt-package
 #sed -i '$a src-git lienol https://github.com/Lancenas/lienol-openwrt-package.git' feeds.conf.default
+
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/molun/luci-app-adguardhome
+git clone https://github.com/vernesong/OpenClash package/molun/luci-app-openclash
+git clone https://github.com/fw876/helloworld package/molun/luci-app-ssr-plus
